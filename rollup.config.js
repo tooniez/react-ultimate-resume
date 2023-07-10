@@ -46,7 +46,7 @@ export default {
             }
         }),
         json(),
-        typescript({ tsconfig: './tsconfig.json', include: 'src/**/*.{jsx,js,ts,tsx}' }),
+        typescript({ tsconfig: './tsconfig.json', include: ['src/**/*.{jsx,js,ts,tsx}'] }),
         commonjs(),
         postcss()
     ]
